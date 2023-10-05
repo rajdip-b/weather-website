@@ -73,8 +73,8 @@ const WeatherData = () => {
                         })
                         .finally(() => setLoaded(true));
                 })
-                .catch((err) => {
-                    console.log(err);
+                .catch(() => {
+                    setLoaded(true);
                 });
     }, [city]);
 
