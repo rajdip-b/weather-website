@@ -70,12 +70,12 @@ const WeatherData = () => {
                         })
                         .catch(() => {
                             setWeatherData(weatherData);
-                        });
+                        })
+                        .finally(() => setLoaded(true));
                 })
                 .catch((err) => {
                     console.log(err);
-                })
-                .finally(() => setLoaded(true));
+                });
     }, [city]);
 
     return (
