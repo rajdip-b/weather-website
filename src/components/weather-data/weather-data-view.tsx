@@ -71,11 +71,11 @@ const WeatherDataView: React.FC<Props> = ({ weatherDate }) => {
                             height={100}
                         />
                     </DetailCard>
-                    <DetailCard className={'flex flex-row gap-x-5 items-center justify-between w-full bg-sky-500/50'}>
+                    <DetailCard className={'flex flex-row gap-x-5 items-center justify-between bg-sky-500/50'}>
                         <div className={'text-3xl font-semibold'}>Humidity</div>
                         <div className={'text-3xl font-semibold'}>{weatherDate.humidity}%</div>
                     </DetailCard>
-                    <DetailCard className={'flex flex-row gap-x-5 items-center justify-between bg-amber-500/50'}>
+                    <DetailCard className={'flex flex-row gap-x-5 items-center justify-between bg-green-500/50'}>
                         <div className={'text-3xl font-semibold'}>Wind Speed</div>
                         <div className={'text-3xl font-semibold'}>{weatherDate.windSpeed} km/h</div>
                     </DetailCard>
